@@ -80,9 +80,6 @@ export default function Testimonials() {
         }}
         modules={[Autoplay]}
         breakpoints={{
-          640: {
-            slidesPerView: 2,
-          },
           1024: {
             slidesPerView: 3,
           },
