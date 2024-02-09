@@ -26,6 +26,22 @@ export default function Hero() {
               wallets, browser wallets, payment gateways, PoS machines, onramps,
               offramps, bridges etc. to enable payment requests.{" "}
             </h3>
+            <div className="flex flex-wrap items-center gap-2 justify-center">
+              <a
+                href="https://calendly.com/ray-fetcch/fetcch-demo"
+                target="_blank"
+                className="mt-8 inline-block max-w-fit rounded-full border-2 border-primary bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary/90"
+              >
+                Book Demo
+              </a>
+              <a
+                href="https://docs.fetcch.xyz/"
+                target="_blank"
+                className="mt-8 inline-block max-w-fit rounded-full border-2 border-primary bg-transparent px-6 py-3 text-sm font-semibold text-black hover:bg-primary/90 hover:text-white"
+              >
+                Integrate
+              </a>
+            </div>
           </div>
         </div>
       </div>
