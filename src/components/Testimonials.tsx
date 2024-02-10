@@ -80,11 +80,13 @@ export default function Testimonials() {
         }}
         modules={[Autoplay]}
         breakpoints={{
-          1500: {
-            slidesPerView: 2.3,
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
           },
-          1600: {
+          992: {
             slidesPerView: 3,
+            spaceBetween: 40,
           },
         }}
         className="mx-auto justify-center items-center"

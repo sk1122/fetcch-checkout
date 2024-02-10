@@ -6,7 +6,7 @@ export default function TestimonialCard({
   testimonial: ITestimonial;
 }) {
   return (
-    <div className="p-4 bg-[#FBFDFB] border border-[#D4D4D4] rounded-xl w-full md:w-[600px] h-auto md:h-[270px] flex flex-col justify-between">
+    <div className="p-4 bg-[#FBFDFB] border border-[#D4D4D4] rounded-xl w-full max-w-[600px] h-auto min-h-[270px] flex flex-col justify-between">
       <div>
         <svg
           width="40"
