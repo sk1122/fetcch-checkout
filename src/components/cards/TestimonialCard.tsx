@@ -43,7 +43,7 @@ export default function TestimonialCard({
           <img src={testimonial?.image} alt="" className="h-8" />
         </div>
       ) : (
-        <div className="flex items-center justify-between mt-8 flex-wrap">
+        <div className="flex items-center justify-between mt-8 flex-wrap gap-3">
           <div className="flex items-center gap-3">
             <img
               src={testimonial?.user?.img}

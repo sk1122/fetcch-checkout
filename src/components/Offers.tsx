@@ -7,7 +7,7 @@ import Custodial from "./cards/Custodial";
 
 export default function Offers() {
   return (
-    <div className="py-20 bg-[#F5F5F5] px-4">
+    <div className="py-20 bg-[#EDF1FF] px-4">
       <div className="max-w-7xl mx-auto">
         <h4 className="text-4xl font-bold text-center">What we offer</h4>
         <p className="text-center text-[#5A6475] max-w-4xl mx-auto mt-4">

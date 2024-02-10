@@ -80,10 +80,14 @@ export default function Testimonials() {
         }}
         modules={[Autoplay]}
         breakpoints={{
-          1024: {
+          1500: {
+            slidesPerView: 2.3,
+          },
+          1600: {
             slidesPerView: 3,
           },
         }}
+        className="mx-auto justify-center items-center"
       >
         {TESTIMONIALS.map((testimonial, index) => (
           <SwiperSlide key={index}>
