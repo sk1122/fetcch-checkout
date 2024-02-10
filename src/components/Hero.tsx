@@ -35,7 +35,7 @@ export default function Hero() {
                 Book Demo
               </a>
               <a
-                href="https://docs.fetcch.xyz/"
+                href="https://q3s9qq4xaky.typeform.com/to/uOqoY2rE"
                 target="_blank"
                 className="mt-8 inline-block max-w-fit rounded-full border-2 border-primary bg-transparent px-6 py-3 text-sm font-semibold text-black hover:bg-primary/90 hover:text-white"
               >

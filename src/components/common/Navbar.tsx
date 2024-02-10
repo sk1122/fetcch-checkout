@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import * as Menubar from "@radix-ui/react-menubar";
 
 export default function Navbar() {
   return (
@@ -9,58 +10,65 @@ export default function Navbar() {
       </Link>
       <ul className="hidden md:flex items-center space-x-8">
         <li className="cursor-pointer hover:text-primary duration-300 font-medium text-neutral_text">
-          <a href="/about-us">About Us</a>
+          <Link href="https://fetcch.xyz/about-us" target="_blank">About Us</Link>
         </li>
         <li className="cursor-pointer hover:text-primary duration-300 font-medium text-neutral_text">
-          <a href="https://docs.fetcch.xyz" target="_blank">
+          <Link href="https://docs.fetcch.xyz" target="_blank">
             Integrate
-          </a>
+          </Link>
         </li>
-
-        <li
-          id="dropdownHoverButton"
-          data-dropdown-toggle="dropdownHover"
-          data-dropdown-trigger="hover"
-          className="cursor-pointer hover:text-primary duration-300 font-medium text-neutral_text"
-        >
-          <a href="#">Resources</a>
-        </li>
-
-        <div
-          id="dropdownHover"
-          className="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700"
-        >
-          <ul
-            className="py-2 text-sm text-gray-700 dark:text-gray-200"
-            aria-labelledby="dropdownHoverButton"
-          >
-            <li>
-              <a
-                href="https://writings.fetcch.xyz"
-                target="_blank"
-                className="block px-4 py-2 hover:bg-gray-100"
+        <Menubar.Root>
+          <Menubar.Menu>
+            <Menubar.Trigger className="cursor-pointer hover:text-primary duration-300 font-medium text-neutral_text">
+              Resources
+            </Menubar.Trigger>
+            <Menubar.Portal>
+              <Menubar.Content
+                className="min-w-[220px] bg-white rounded-md p-[5px] shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] [animation-duration:_400ms] [animation-timing-function:_cubic-bezier(0.16,_1,_0.3,_1)] will-change-[transform,opacity]"
+                align="start"
+                sideOffset={5}
+                alignOffset={-3}
               >
-                Writings
-              </a>
-            </li>
-            <li>
-              <a
-                href="/report-with-anq"
-                className="block px-4 py-2 hover:bg-gray-100"
+                <Menubar.Item className="block px-4 py-2 hover:bg-gray-100 cursor-pointer outline-none">
+                  <Link href={"https://checkout.fetcch.xyz"} target="_blank">Writings</Link>
+                </Menubar.Item>
+                <Menubar.Item className="block px-4 py-2 hover:bg-gray-100 cursor-pointer outline-none">
+                  <Link href="https://fetcch.xyz/report-with-anq" target="_blank">Reports</Link>
+                </Menubar.Item>
+                <Menubar.Item className="block px-4 py-2 hover:bg-gray-100 cursor-pointer outline-none">
+                  <Link href="https://docs.fetcch.xyz/faqs/faqs" target="_blank">FAQs</Link>
+                </Menubar.Item>
+              </Menubar.Content>
+            </Menubar.Portal>
+          </Menubar.Menu>
+        </Menubar.Root>
+        <Menubar.Root>
+          <Menubar.Menu>
+            <Menubar.Trigger className="cursor-pointer hover:text-primary duration-300 font-medium text-neutral_text">
+              Products
+            </Menubar.Trigger>
+            <Menubar.Portal>
+              <Menubar.Content
+                className="min-w-[220px] bg-white rounded-md p-[5px] shadow-[0px_10px_38px_-10px_rgba(22,_23,_24,_0.35),_0px_10px_20px_-15px_rgba(22,_23,_24,_0.2)] [animation-duration:_400ms] [animation-timing-function:_cubic-bezier(0.16,_1,_0.3,_1)] will-change-[transform,opacity]"
+                align="start"
+                sideOffset={5}
+                alignOffset={-3}
               >
-                Reports
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://docs.fetcch.xyz/faqs/faqs"
-                className="block px-4 py-2 hover:bg-gray-100"
-              >
-                FAQs
-              </a>
-            </li>
-          </ul>
-        </div>
+                <Menubar.Item className="block px-4 py-2 hover:bg-gray-100 cursor-pointer outline-none">
+                  <Link href={"https://t.me/fetcch_request_bot"} target="_blank">
+                    Fetcch request bot
+                  </Link>
+                </Menubar.Item>
+                <Menubar.Item className="block px-4 py-2 hover:bg-gray-100 cursor-pointer outline-none">
+                  <Link href="https://cctpbridge.io/" target="_blank">CCTP bridge</Link>
+                </Menubar.Item>
+                <Menubar.Item className="block px-4 py-2 hover:bg-gray-100 cursor-pointer outline-none">
+                  <Link href="https://checkout.fetcch.xyz" target="_blank">Checkout</Link>
+                </Menubar.Item>
+              </Menubar.Content>
+            </Menubar.Portal>
+          </Menubar.Menu>
+        </Menubar.Root>
       </ul>
       <div></div>
     </div>
